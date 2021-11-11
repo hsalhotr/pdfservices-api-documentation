@@ -27,25 +27,30 @@ export const onClientEntry = () => {
     }
   }
 
-  window.onload = () => { 
+  window.onload = () => {
+    console.log('firing on load')
     document.querySelectorAll('.spectrum-Breadcrumbs-item').forEach((item) => {
       digitalData.page.pageInfo.breadCrumbs.push(item.innerText);
     });
   
     if(typeof _satellite !== 'undefined') {
+      console.log('sending sat')
+      console.log(digitalData)
       _satellite.track('state', {
         digitalData: digitalData
       });
     }
-
-    
   }
 }
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
   let siteSection = location.pathname.split('/');
   digitalData.page.pageInfo.siteSection = siteSection.pop() || siteSection.pop();
-  _satellite.track('state', {
-    digitalData: digitalData
-  });
+  if(typeof _satellite !== 'undefined') {
+    console.log('sending sat')
+    console.log(digitalData)
+    _satellite.track('state', {
+      digitalData: digitalData
+    });
+  }
 }
