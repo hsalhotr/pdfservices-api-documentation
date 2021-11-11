@@ -46,11 +46,18 @@ export const onClientEntry = () => {
 export const onRouteUpdate = ({ location, prevLocation }) => {
   let siteSection = location.pathname.split('/');
   digitalData.page.pageInfo.siteSection = siteSection.pop() || siteSection.pop();
+
+  document.querySelectorAll('.spectrum-Breadcrumbs-item').forEach((item) => {
+    digitalData.page.pageInfo.breadCrumbs.push(item.innerText);
+  });
+
   if(typeof _satellite !== 'undefined') {
     console.log('sending sat')
     console.log(digitalData)
     _satellite.track('state', {
       digitalData: digitalData
     });
+
+
   }
 }
