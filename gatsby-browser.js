@@ -48,6 +48,7 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
   digitalData.page.pageInfo.siteSection = siteSection.pop() || siteSection.pop();
 
   console.log('setting breadcrumbs')
+  console.log(document.querySelectorAll('.spectrum-Breadcrumbs-item'))
   document.querySelectorAll('.spectrum-Breadcrumbs-item').forEach((item) => {
     console.log(item.innerText)
     digitalData.page.pageInfo.breadCrumbs.push(item.innerText);
