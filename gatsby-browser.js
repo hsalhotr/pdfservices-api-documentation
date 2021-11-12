@@ -28,14 +28,12 @@ export const onClientEntry = () => {
   }
 
   window.onload = () => {
-    console.log('firing on load')
+    digitalData.page.pageInfo.breadCrumbs = [];
     document.querySelectorAll('.spectrum-Breadcrumbs-item').forEach((item) => {
       digitalData.page.pageInfo.breadCrumbs.push(item.innerText);
     });
   
     if(typeof _satellite !== 'undefined') {
-      console.log('sending sat')
-      console.log(digitalData)
       _satellite.track('state', {
         digitalData: digitalData
       });
@@ -47,20 +45,14 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
   let siteSection = location.pathname.split('/');
   digitalData.page.pageInfo.siteSection = siteSection.pop() || siteSection.pop();
 
-  console.log('setting breadcrumbs')
-  console.log(document.querySelectorAll('.spectrum-Breadcrumbs-item'))
+  digitalData.page.pageInfo.breadCrumbs = [];
   document.querySelectorAll('.spectrum-Breadcrumbs-item').forEach((item) => {
-    console.log(item.innerText)
     digitalData.page.pageInfo.breadCrumbs.push(item.innerText);
   });
 
   if(typeof _satellite !== 'undefined') {
-    console.log('sending sat on route')
-    console.log(digitalData)
     _satellite.track('state', {
       digitalData: digitalData
     });
-
-
   }
 }
