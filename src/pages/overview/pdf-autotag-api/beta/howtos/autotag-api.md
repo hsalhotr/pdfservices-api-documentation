@@ -36,11 +36,11 @@ The output of an SDK autotag operation contains the following:
 
 - [Generate tagged pdf of version 1.7 from a PDF](autotag-api/#generate-tagged-pdf-of-version-17-from-a-pdf)
 - [Generate tagged pdf of version 1.7 and an excel report from a PDF](autotag-api/#generate-tagged-pdf-of-version-17-and-an-excel-report-from-a-pdf)
-- [Generate tagged pdf of version 1.7 and shift its headings and an excel report from a PDF](autotag-api/#generate-tagged-pdf-of-version-17-and-shift-its-headings-and-an-excel-report-from-a-pdf)
+- [Generate tagged pdf of version 1.7 shifting its headings and an excel report from a PDF](autotag-api/#generate-tagged-pdf-of-version-17-shifting-its-headings-and-an-excel-report-from-a-pdf)
 - [Generate tagged pdf of version 1.7 from a PDF and shift its headings](autotag-api/#generate-tagged-pdf-of-version-17-from-a-pdf-and-shift-its-headings)
 - [Generate tagged pdf of version 2.0 from a PDF](autotag-api/#generate-tagged-pdf-of-version-20-from-a-pdf)
 - [Generate tagged pdf of version 2.0 and an excel report from a PDF](autotag-api/#generate-tagged-pdf-of-version-20-and-an-excel-report-from-a-pdf)
-- [Generate tagged pdf of version 2.0 and shifting its headings and an excel report from a PDF](autotag-api/#generate-tagged-pdf-of-version-20-and-shifting-its-headings-and-an-excel-report-from-a-pdf)
+- [Generate tagged pdf of version 2.0 shifting its headings and an excel report from a PDF](autotag-api/#generate-tagged-pdf-of-version-20-shifting-its-headings-and-an-excel-report-from-a-pdf)
 - [Generate tagged pdf of version 2.0 from a PDF and shift its headings](autotag-api/#generate-tagged-pdf-of-version-20-from-a-pdf-and-shift-its-headings)
 
 ## Generate tagged pdf of version 1.7 from a PDF
@@ -175,9 +175,9 @@ public class AutotagPDFWithV17AndReport {
 }      
 ```
 
-## Generate tagged pdf of version 1.7 and shift its headings and an excel report from a PDF
+## Generate tagged pdf of version 1.7 shifting its headings and an excel report from a PDF
 
-Use the sample below to generate tagged pdf of version 1.7 and shift its headings an excel report from a PDF document.
+Use the sample below to generate tagged pdf of version 1.7 shifting its headings and an excel report from a PDF document.
 
 Copy this command in terminal to run the sample:
 ```
@@ -438,9 +438,9 @@ public class AutotagPDFWithV20AndReport {
 }
 ```
 
-## Generate tagged pdf of version 2.0 and shifting its headings and an excel report from a PDF
+## Generate tagged pdf of version 2.0 shifting its headings and an excel report from a PDF
 
-Use the sample below to generate tagged pdf of version 2.0 and shifting its headings an excel report from a PDF document.
+Use the sample below to generate tagged pdf of version 2.0 shifting its headings and an excel report from a PDF document.
 
 Copy this command in terminal to run the sample:
 ```

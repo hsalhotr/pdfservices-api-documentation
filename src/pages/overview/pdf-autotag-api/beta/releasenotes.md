@@ -1,8 +1,10 @@
 # Release Notes
+<p>
 
 This document describes the change history across releases for supported
-versions. For details regarding versioning and support policies, see
-[Version - Support policy](../../pdf-services-api/policies.md).
+versions. 
+
+</p>
 
 ## Change types
 
