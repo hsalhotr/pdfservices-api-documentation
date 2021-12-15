@@ -5,9 +5,12 @@ Fragments is a special type of text tag which is used to group one or multiple  
 - Placeholder Text Tag 
 - Fragment Tag
 
-## Example
+## Uses
 
 Fragments allow user to write complex structure of text tag seperately thus saves complexity and eases maintainablity of editing and manipulating such complex structure in document templates.
+
+#### Example:
+
 
 ![image](../images/use_fragments.png)
 
