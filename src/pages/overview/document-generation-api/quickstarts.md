@@ -86,10 +86,10 @@ The sample below generates the output document in the **PDF** format. Similarly,
  
    package com.adobe.pdfservices.operation.samples.documentmerge;
  
-   public class MergeDocumentToDOCX {
+   public class MergeDocumentToPDF {
  
       // Initialize the logger.
-      private static final Logger LOGGER = LoggerFactory.getLogger(MergeDocumentToDOCX.class);
+      private static final Logger LOGGER = LoggerFactory.getLogger(MergeDocumentToPDF.class);
  
       public static void main(String[] args) {
  
@@ -138,7 +138,7 @@ The sample below generates the output document in the **PDF** format. Similarly,
 // cd MergeDocumentToDocx/
 // dotnet run MergeDocumentToDOCX.csproj
 
-  namespace MergeDocumentToDOCX
+  namespace MergeDocumentToPDF
    {
        class Program
        {
@@ -174,7 +174,7 @@ The sample below generates the output document in the **PDF** format. Similarly,
                    FileRef result = documentMergeOperation.Execute(executionContext);
   
                    // Save the result to the specified location.
-                   result.SaveAs(Directory.GetCurrentDirectory() + "/output/DocumentMergeOutput.pdf");
+                   result.SaveAs(Directory.GetCurrentDirectory() + "/output/documentMergeOutput.pdf");
                }
                catch (ServiceUsageException ex)
                {
@@ -509,7 +509,6 @@ The sample below shows the use of **Fragments** in the word template and generat
 // node src/documentmerge/merge-document-to-pdf-fragments.js
 
     const PDFServicesSdk = require('@dcloud/pdfservices-node-sdk');
-    const Fragments = PDFServicesSdk.Fragments;
     
     try {
         // Initial setup, create credentials instance.
